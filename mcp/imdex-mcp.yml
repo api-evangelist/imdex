@@ -1,0 +1,22 @@
+# IMDEX MCP server manifest -- honest negative.
+generated: '2026-10-21'
+method: none
+status: none
+source:
+- https://support.imdexlimited.com/api/mcp
+- https://help.seequent.com/Central/en-GB/Content/guides/integrations.htm
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+notes: >-
+  IMDEX does not publish an MCP server, either remote or as a local stdio package. Web searches
+  on 2026-10-21 for an IMDEX / IMDEXHUB-IQ MCP server or developer portal turned up nothing.
+  In pre-flight, https://support.imdexlimited.com/api/mcp returned HTTP 401, but the control
+  path on the same host also returned 401. That host is a ServiceNow customer-service portal
+  (/csm) that authenticates every /api/* path, so the 401 says nothing about an MCP endpoint
+  ("opaque"). It is not recorded as an endpoint.
+  IMDEX has no public OpenAPI contract, so no candidate tool list could be derived. IMDEXHUB-IQ
+  issues API keys for third-party integrations such as Seequent Central (according to Seequent's
+  help page), but the API it backs is not publicly documented.

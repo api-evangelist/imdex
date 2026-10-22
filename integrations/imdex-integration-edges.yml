@@ -1,0 +1,53 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.imdex.com/software/hub-iq
+- https://zapier.com/apps/imdex/integrations
+- https://n8n.io/integrations/imdex/
+- https://composio.dev/toolkits/imdex
+- https://monid.ai/tools/imdex
+checked:
+- https://www.imdex.com/software/hub-iq
+- https://help.seequent.com/Central/en-GB/Content/guides/integrations.htm
+- https://composio.dev/toolkits/imdex
+- https://monid.ai/tools/imdex
+- https://n8n.io/integrations/imdex/
+- https://zapier.com/apps/imdex/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: Seequent Central
+  partner: null
+  type: claimed
+  evidence: https://www.imdex.com/software/hub-iq
+  direction: unknown
+  use_case: Seequent Central Live Link — visualise and analyse drillhole data alongside the 3D model in near real
+    time
+  partner_url: https://help.seequent.com/Central/en-GB/Content/guides/integrations.htm
+- partner_name: Krux
+  partner: null
+  type: claimed
+  evidence: https://www.imdex.com/software/hub-iq
+  direction: unknown
+  use_case: Krux Metrix integrates seamlessly with HUB-IQ to give drillers and service providers real-time visibility
+    and control over their drilling data
+- partner_name: acQuire
+  partner: null
+  type: claimed
+  evidence: https://www.imdex.com/software/hub-iq
+  direction: unknown
+  use_case: Data generated from IMDEX's sensors flow from the field directly into acQuire GIM Suite database (GIM
+    Suite 4 only)
+- partner_name: maxgeo
+  partner: null
+  type: claimed
+  evidence: https://www.imdex.com/software/hub-iq
+  direction: unknown
+  use_case: With HUB-IQ (Integration API), approved survey data seamlessly syncs into DataShed5
+templates: []
+skips:
+- label: all partners
+  cause: provider-contract
+  why: IMDEX publishes no OpenAPI or API reference for the HUB-IQ Integration API, so no workflow can be authored.
+note: HUB-IQ's "Recommended Integrations" section names four partners. Its maxgeo entry calls the interface "HUB-IQ
+  (Integration API)". IMDEX publishes no contract, so no edge can be stitched into Arazzo.

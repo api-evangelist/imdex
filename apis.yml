@@ -1,23 +1,106 @@
 aid: imdex
+
 name: IMDEX
-description: 'IMDEX is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'IMDEX Limited (ASX: IMD) is an Australian mining-technology company that creates drilling, sensor and software
+  solutions to help resource companies find, define and mine orebodies faster, safer and more sustainably through trusted
+  data and innovation. Its products include downhole survey and orientation instruments, drilling optimisation products and
+  the IMDEXHUB-IQ cloud data platform, which issues API keys for third-party integrations such as Seequent Central. IMDEX
+  was surfaced via the API Evangelist harvest backlog (australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/imdex/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Mining Technology
+- Geoscience
+- Drilling
+- Data Platform
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.imdex.com/assets/img/logo_white.svg
+
 common:
+- type: Authentication
+  url: authentication/imdex-authentication.yml
+- type: Conformance
+  url: conformance/imdex-conformance.yml
+- type: Hosts
+  url: hosts/imdex-hosts.yml
+- type: IntegrationEdges
+  url: integrations/imdex-integration-edges.yml
+- type: Vendors
+  url: vendors/imdex-vendors.yml
+- type: DomainSecurity
+  url: security/imdex-domain-security.yml
 - type: Website
-  url: https://imdex.com/
+  url: https://www.imdex.com/
+- type: Newsroom
+  url: https://www.imdex.com/news-knowledge/news
+- type: Support
+  url: https://support.imdexlimited.com/csm
+- type: Contact
+  url: https://www.imdex.com/about/contact-us
+- type: About
+  url: https://www.imdex.com/about
+- type: InvestorRelations
+  url: https://www.imdex.com/investor
+- type: Product
+  url: https://www.imdex.com/software/hub-iq
+- type: TermsOfService
+  url: https://www.imdex.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.imdex.com/privacy-policy
+- type: LinkedIn
+  url: https://au.linkedin.com/company/imdex-limited
+- type: YouTube
+  url: https://www.youtube.com/@imdexlimited7458
+- type: Facebook
+  url: https://www.facebook.com/imdexlimited/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified as IMDEX own site (title "IMDEX | Mining Technology for Smarter Decisions"); no public developer
+    portal, API docs or GitHub org found. IMDEXHUB-IQ API keys are documented only by Seequent (help.seequent.com).
+  evidence:
+  - url: https://www.imdex.com/
+    status: 200
+  - url: https://www.imdex.com/software/hub-iq
+    status: 200
+  - url: https://support.imdexlimited.com/csm
+    status: 200
+  - url: https://www.imdex.com/privacy-policy
+    status: 200
+  - url: https://www.imdex.com/terms-conditions
+    status: 200
+  - url: https://www.imdex.com/about/contact-us
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

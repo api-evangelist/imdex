@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: searched
+source: https://help.seequent.com/Central/en-GB/Content/guides/integrations.htm
+docs: https://help.seequent.com/Central/en-GB/Content/guides/integrations.htm
+summary: >-
+  IMDEX publishes no public API reference or OpenAPI. The only public description of how to authenticate to the
+  IMDEXHUB-IQ integration API is on a partner page (Seequent Central help). It says keys are self-issued per user:
+  "click on your username, then on Account Management. Select the API Keys option, then create a new key." The page
+  also says a key is bound to IMDEX projects: "the API key copied from the IMDEXHUB-IQ™ website will allow you to
+  retrieve the IMDEX projects associated with that API key". No header name, location or scheme is published.
+schemes:
+- type: apiKey
+  name: null
+  in: null
+  note: >-
+    Key created in IMDEXHUB-IQ under Account Management > API Keys and scoped to the IMDEX projects of that account.
+    The docs do not say how the key is transmitted (header or query, and the name), so those fields are left null.
+  evidence: https://help.seequent.com/Central/en-GB/Content/guides/integrations.htm

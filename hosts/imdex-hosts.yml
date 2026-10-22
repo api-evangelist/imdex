@@ -1,0 +1,111 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 9
+  own: 2
+  other_domain: 4
+  platform: 3
+  roles:
+  - api
+  - identity
+  - other
+  - support
+  - website
+hosts:
+- host: api.imdex.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: imdex.com
+  role: api
+  relation: own
+- host: api.imdexlimited.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: imdexlimited.com
+  role: api
+  relation: other-domain
+- host: api.microsoftonline.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: microsoftonline.com
+  role: api
+  relation: other-domain
+- host: au.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: login.microsoftonline.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: microsoftonline.com
+  role: identity
+  relation: other-domain
+- host: support.imdexlimited.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: imdexlimited.com
+  role: support
+  relation: other-domain
+- host: www.facebook.com
+  found_by:
+  - pointer
+  types:
+  - Facebook
+  serves: []
+  registrable_domain: facebook.com
+  role: other
+  relation: platform
+- host: www.imdex.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Newsroom
+  - Contact
+  - About
+  - InvestorRelations
+  - Product
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: imdex.com
+  role: website
+  relation: own
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform

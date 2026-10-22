@@ -1,0 +1,72 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.imdex.com/privacy-policy
+signals:
+  data_subject_request:
+    url: https://www.imdex.com/privacy-policy
+    section: '6. Your choices and rights'
+    rights_named: [access, portability (machine-readable format), deletion, correction, restriction, objection, transfer to another person, anonymity/pseudonymity, opt out of direct marketing, withdrawal of consent]
+    channel: contact details at the top of the Privacy Policy
+    evidence:
+    - source: https://www.imdex.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You also have rights in relation to your personal information, such as the right to: request access to
+        your personal information and to receive the personal information you have provided us in a structured,
+        commonly used and machine-readable format; request deletion of your personal information; request
+        correction of your personal information, if it is incorrect, and request we notify any third parties we
+        have shared that information with of the correction; request restriction on processing or object to the
+        processing of your personal information; request your personal information be transferred to another
+        person; not identify yourself or use a pseudonym; request not to receive direct marketing from us; and
+        withdraw consent to use your personal information for a particular purpose.
+    - source: https://www.imdex.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You can also communicate your preferences in relation to the choices and rights described in this part
+        by using the contact information at the top of this Policy.
+    note: >-
+      IMDEX's corporate privacy policy names a GDPR-style set of data-subject rights (including portability) and
+      routes requests to the contact details in the policy. No response SLA or dedicated request form is stated.
+  data_retention:
+    url: https://www.imdex.com/privacy-policy
+    section: '5. Transfer and storage of personal information'
+    evidence:
+    - source: https://www.imdex.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We store personal information only for so long as it is required by our business. To determine the
+        appropriate retention period for personal information, we consider: the amount, nature and sensitivity of
+        the personal information; the potential risk of harm from unauthorised use or disclosure of the personal
+        information; the purposes for which we process the personal information; whether we can achieve those
+        purposes through other means; and applicable legal requirements.
+    note: >-
+      A criteria-based retention statement; no fixed retention periods or schedule are published.
+  data_residency:
+    url: https://www.imdex.com/privacy-policy
+    section: '5. Transfer and storage of personal information'
+    evidence:
+    - source: https://www.imdex.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Such transfer or storage may involve information being transferred to, or stored at, a destination other
+        than where it was originally gathered, including outside Australia, and the EEA. The main jurisdictions in
+        which we operate are Australia, United States of America, Canada, Chile, Brazil, Peru, Mexico, South
+        Africa, United Kingdom, Romania, United Arab Emirates, Germany and Indonesia.
+    note: >-
+      This is NOT a residency commitment: the policy discloses that personal data may be stored or transferred
+      outside Australia and the EEA and lists the operating jurisdictions, relying on lawful-basis steps for
+      cross-border disclosure. No customer-selectable data region is offered on the pages read.
+checked_pages:
+- url: https://www.imdex.com/terms-conditions
+  http_status: 200
+  fetched: '2026-10-21'
+  note: Terms and Conditions page carried no candidate language for any catalog regulatory signal.
+- url: https://www.imdex.com/privacy-policy
+  http_status: 200
+  fetched: '2026-10-21'
+  note: No subprocessor list, incident/breach notification, Global Privacy Control, or AI transparency language found.

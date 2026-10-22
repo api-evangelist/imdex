@@ -1,0 +1,7 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.imdex.com/software/hub-iq
+standards:
+- id: iso27001
+  conforms: claimed
+  evidence: 'https://www.imdex.com/software/hub-iq — "Robust security, ISO27001 certified"'
